@@ -17,7 +17,6 @@ class TestMainFragment : Fragment(R.layout.fragment_test_main), View.OnClickList
         binding = FragmentTestMainBinding.bind(view)
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
@@ -29,8 +28,6 @@ class TestMainFragment : Fragment(R.layout.fragment_test_main), View.OnClickList
             binding?.btnMaintestEasy -> findNavController().navigate(R.id.action_testMainFragment_to_testEasyFragment)
             binding?.btnMaintestMedium ->  findNavController().navigate(R.id.action_testMainFragment_to_testMediumFragment)
             binding?.btnMaintestHard -> findNavController().navigate(R.id.action_testMainFragment_to_testHardFragment)
-
         }
     }
-
 }
