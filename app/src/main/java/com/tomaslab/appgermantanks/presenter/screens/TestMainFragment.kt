@@ -7,7 +7,6 @@ import androidx.navigation.fragment.findNavController
 import com.tomaslab.appgermantanks.R
 import com.tomaslab.appgermantanks.databinding.FragmentTestMainBinding
 
-
 class TestMainFragment : Fragment(R.layout.fragment_test_main), View.OnClickListener {
 
     private var binding: FragmentTestMainBinding?=null
