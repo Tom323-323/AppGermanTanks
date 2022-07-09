@@ -16,6 +16,12 @@ class RootFragment : Fragment(R.layout.fragment_root), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentRootBinding.bind(view)
 
+        binding?.btRootTanks?.setOnClickListener(this)
+        binding?.btnRootSauMortar?.setOnClickListener(this)
+        binding?.btnRootBtr?.setOnClickListener(this)
+        binding?.btnRootTest ?.setOnClickListener(this)
+        binding?.btnRootInfo?.setOnClickListener(this)
+
     }
 
     override fun onDestroyView() {

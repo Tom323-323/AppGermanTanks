@@ -14,6 +14,11 @@ class TestMainFragment : Fragment(R.layout.fragment_test_main), View.OnClickList
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTestMainBinding.bind(view)
+
+        binding?.btnMaintestToBack?.setOnClickListener(this)
+        binding?.btnMaintestEasy?.setOnClickListener(this)
+        binding?.btnMaintestMedium?.setOnClickListener(this)
+        binding?.btnMaintestHard?.setOnClickListener(this)
     }
 
     override fun onDestroyView() {

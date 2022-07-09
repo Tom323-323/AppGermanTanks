@@ -1,6 +1,7 @@
 package com.tomaslab.appgermantanks.presenter.screens
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -20,15 +21,12 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     }
 
     private fun showFragment(){
-        Thread {
-            try {
-                Thread.sleep(2000)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            }
+        Handler().postDelayed({
             findNavController().navigate(R.id.action_splashFragment_to_rootFragment)
+        }, 1000)
 
-        }.start()
+
+
     }
 
     override fun onDestroyView() {
