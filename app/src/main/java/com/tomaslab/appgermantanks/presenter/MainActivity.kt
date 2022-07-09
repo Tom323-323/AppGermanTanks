@@ -1,4 +1,4 @@
-package com.tomaslab.appgermantanks
+package com.tomaslab.appgermantanks.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

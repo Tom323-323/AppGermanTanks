@@ -3,7 +3,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.InfoFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presenter.screens.InfoFragment"
+    android:background="@color/colorText">
 
+    <Button
+        android:id="@+id/btn_info_to_back"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:background="@drawable/ic_back_test_v3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_lnfo_logo"
+        android:layout_width="188dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_info_to_back"
+        app:srcCompat="@drawable/img_logo_info" />
+
+    <TextView
+        android:id="@+id/tv_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/merriweather_black"
+        android:text="@string/info_version"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_lnfo_logo"
+        app:layout_constraintStart_toStartOf="@+id/img_lnfo_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_lnfo_logo" />
+
+    <TextView
+        android:id="@+id/tv_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/info_1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_version" />
+
+    <Button
+        android:id="@+id/btn_info_to_rate"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/merriweather_black"
+        android:text="@string/stars"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_content" />
+
+    <TextView
+        android:id="@+id/tv_info_version"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/info_version2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_title" />
+
+    <TextView
+        android:id="@+id/tv_info_bottom_text"
+        android:layout_width="310dp"
+        android:layout_height="22dp"
+        android:text="@string/info_4"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="@+id/btn_info_to_rate"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/btn_info_to_rate" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="192dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/info_5"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info_bottom_text"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_bottom_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

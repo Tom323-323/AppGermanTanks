@@ -1,15 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AppGermanTanks" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AppGermanTanks" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#4A4E38</item>
+        <item name="colorPrimary">@color/colorLightMain</item>
         <item name="colorPrimaryDark">#4A4E38</item>
         <item name="colorAccent">#4A4E38</item>
+
+        <item name="android:textColor">#4E4A4A</item>
+
+        <item name="background">@color/colorWitheMain</item>
 
         <!-- Secondary brand color. -->
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
         <item name="android:windowFullscreen">true</item>
     </style>

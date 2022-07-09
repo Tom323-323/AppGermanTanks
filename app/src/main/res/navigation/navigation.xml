@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
 
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.RootFragment"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" >
+        <action
+            android:id="@+id/action_rootFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_rootFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+        <action
+            android:id="@+id/action_rootFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_rootFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" />
+    <fragment
+        android:id="@+id/testMainFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.TestMainFragment"
+        android:label="fragment_test_main"
+        tools:layout="@layout/fragment_test_main" >
+        <action
+            android:id="@+id/action_testMainFragment_to_testEasyFragment"
+            app:destination="@id/testEasyFragment" />
+        <action
+            android:id="@+id/action_testMainFragment_to_testMediumFragment"
+            app:destination="@id/testMediumFragment" />
+        <action
+            android:id="@+id/action_testMainFragment_to_testHardFragment"
+            app:destination="@id/testHardFragment" />
+        <action
+            android:id="@+id/action_testMainFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testEasyFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.TestEasyFragment"
+        android:label="fragment_test_easy"
+        tools:layout="@layout/fragment_test_easy" >
+        <action
+            android:id="@+id/action_testEasyFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testMediumFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.TestMediumFragment"
+        android:label="fragment_test_medium"
+        tools:layout="@layout/fragment_test_medium" >
+        <action
+            android:id="@+id/action_testMediumFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testHardFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.TestHardFragment"
+        android:label="fragment_test_hard"
+        tools:layout="@layout/fragment_test_hard" >
+        <action
+            android:id="@+id/action_testHardFragment_to_testMainFragment"
+            app:destination="@id/testMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.tomaslab.appgermantanks.presenter.screens.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
+    </fragment>
 </navigation>

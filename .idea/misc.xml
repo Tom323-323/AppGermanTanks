@@ -7,12 +7,13 @@
         <entry key="..\:/AppGermanTanks/app/src/main/res/drawable/button_style.xml" value="0.305" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/drawable/ic_launcher_background.xml" value="0.153" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_info.xml" value="0.33" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_item_list.xml" value="0.36666666666666664" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_list.xml" value="0.36666666666666664" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_root.xml" value="0.33" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_splash.xml" value="0.36666666666666664" />
-        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_hard.xml" value="0.36666666666666664" />
+        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_main.xml" value="0.33" />
       </map>
     </option>
   </component>

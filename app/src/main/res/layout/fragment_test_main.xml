@@ -4,101 +4,160 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".screens.TestMainFragment">
+    tools:context=".presenter.screens.TestMainFragment"
+    android:background="@color/colorText">
 
-    <Button
-        android:id="@+id/button_back_info"
-        android:layout_width="55dp"
-        android:layout_height="57dp"
-        android:background="@drawable/ic_back_test_v3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="188dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginEnd="137dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_back_info"
-        app:srcCompat="@drawable/img_logo_info" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/merriweather_black"
-        android:text="@string/info_version"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="@string/info_1"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-    <Button
-        android:id="@+id/btn_s"
-        android:layout_width="287dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/button_style"
-        android:fontFamily="@font/merriweather_black"
-        android:text="@string/stars"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="@string/info_version2"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/textView22"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="310dp"
-        android:layout_height="22dp"
-        android:text="@string/info_4"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
-        app:layout_constraintEnd_toEndOf="@+id/btn_s"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="@+id/btn_s" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="192dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/info_5"
-        android:textAlignment="center"
-        android:textColor="@color/colorRed"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView26"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/textView26" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <Button
+                android:id="@+id/btn_maintest_to_back"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/ic_back_test_v3"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/img_test_main_logo" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:fontFamily="@font/merriweather_black"
+                android:gravity="center|center_vertical"
+                android:text="@string/test_main_choise"
+                android:textColor="@color/colorMain"
+                android:textSize="20sp"
+                android:typeface="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_maintest_easy"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_style"
+                    android:fontFamily="@font/merriweather_black"
+                    android:text="@string/test_title_1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/textViewEasyScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/merriweather_black"
+                    android:gravity="center"
+                    android:text="@string/test_activity_start_score"
+                    android:textColor="@color/color_chronometr"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_maintest_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_style"
+                    android:fontFamily="@font/merriweather_black"
+                    android:text="@string/test_title_2"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewMediumScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/merriweather_black"
+                    android:gravity="center"
+                    android:text="@string/test_activity_start_score2"
+                    android:textColor="@color/color_chronometr"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_maintest_hard"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_style"
+                    android:fontFamily="@font/merriweather_black"
+                    android:text="@string/test_title_3"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewHardScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/merriweather_black"
+                    android:gravity="center"
+                    android:text="@string/test_activity_start_score2"
+                    android:textColor="@color/color_chronometr"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
