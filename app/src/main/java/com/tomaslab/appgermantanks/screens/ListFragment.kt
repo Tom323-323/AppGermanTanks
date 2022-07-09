@@ -2,22 +2,18 @@ package com.tomaslab.appgermantanks.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.tomaslab.appgermantanks.R
-import com.tomaslab.appgermantanks.databinding.FragmentRootBinding
-import com.tomaslab.appgermantanks.databinding.FragmentSplashBinding
+import com.tomaslab.appgermantanks.databinding.FragmentListBinding
 
-class RootFragment : Fragment(R.layout.fragment_root) {
+class ListFragment : Fragment(R.layout.fragment_list) {
 
-    private var binding: FragmentRootBinding?=null
+    private var binding: FragmentListBinding?=null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentRootBinding.bind(view)
+        binding = FragmentListBinding.bind(view)
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

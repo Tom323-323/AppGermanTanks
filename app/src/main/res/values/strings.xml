@@ -1,8 +1,24 @@
 <resources>
     <string name="app_name">AppGermanTanks</string>
 
+
+    <!-- Fragment Splash-->
     <string name="logo_name_splash_screen">СПРАВОЧНИК \n БРОНЕТЕХНИКА ГЕРМАНИИ\n (1930–1945)</string>
     <string name="nameTextMain">Бронетехника Германии (1935–1945)</string>
+    <!-- Fragment Splash-->
+
+
+    <!-- Fragment Info-->
+    <string name="stars">Оценить приложение</string>
+    <string name="info_version">Бронетехника Германии</string>
+    <string name="info_version2">версия 1.4.0</string>
+    <string name="info_4">По вопросам сотрудничества</string>
+    <string name="info_5">tomas0dft@gmail.com</string>
+    <string name="info_1">«Бронетехника Германии» — приложение, основной задачей которого является изучение военной техники. Использование нацистской атрибутики и символики формирует негативное отношение к идеологии нацизма, без пропаганды и оправдания нацизма.
+Основной материал взят: [Электронный ресурс]: Википедия. Свободная энциклопедия. – https://ru.wikipedia.org/wiki/</string>
+    <!-- Fragment Info-->
+
+
 
 
 </resources>
