@@ -14,10 +14,10 @@
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_root.xml" value="0.33" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_settings.xml" value="0.18802083333333333" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_splash.xml" value="0.36666666666666664" />
-        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_easy.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_easy.xml" value="0.33" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_hard.xml" value="0.36666666666666664" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_main.xml" value="0.33" />
-        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_medium.xml" value="0.18802083333333333" />
+        <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_medium.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -34,5 +34,16 @@
     <!-- Fragment TestMain-->
 
 
+    <!-- Fragment TestEasy-->
+    <string name="bt_exit">ВЫХОД</string>
+    <!-- Fragment TestEasy-->
+
+
+    <!-- Fragment TestMedium-->
+    <string name="test_med1">СЧЕТ:</string>
+    <string name="test_med2">0</string>
+    <string name="test_med3">1/20</string>
+    <!-- Fragment TestMedium-->
+
 
 </resources>
