@@ -59,7 +59,7 @@
         android:layout_width="287dp"
         android:layout_height="56dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/style_button"
         android:fontFamily="@font/merriweather_black"
         android:text="@string/stars"
         android:textSize="16sp"
