@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWitheMain">
@@ -20,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Chronometer
-        android:id="@+id/textView21"
+        android:id="@+id/tv_chronometer"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_gravity="center"
@@ -44,11 +43,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:max="20"
-        android:progress="12"
-        android:progressDrawable="@drawable/stile_progressbar"
+        android:progress="14"
+        android:progressDrawable="@drawable/style_progressbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_chronometer" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,22 +64,30 @@
         app:layout_constraintTop_toBottomOf="@+id/progress_bar">
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btn_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
             android:background="@drawable/style_button"
-            android:scaleType="fitCenter" />
+            android:contentDescription="@string/info_version"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_test_main_logo" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
             android:background="@drawable/style_button"
-            android:scaleType="fitCenter" />
+            android:contentDescription="@string/info_version"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_test_main_logo" />
     </LinearLayout>
 
 

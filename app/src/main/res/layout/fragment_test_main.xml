@@ -32,7 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/img_test_main_logo" />
+                android:src="@drawable/img_test_main_logo"
+               />
         </RelativeLayout>
 
         <LinearLayout
