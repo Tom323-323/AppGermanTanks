@@ -7,81 +7,72 @@
     android:layout_height="match_parent"
     android:background="@color/colorWitheMain">
 
+
     <Button
-        android:id="@+id/btn_back_testhard"
-        android:layout_width="115dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_back_testmedium"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/style_button"
+        android:textSize="15sp"
         android:fontFamily="@font/merriweather_black"
         android:text="@string/bt_exit"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_count"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_count" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/merriweather_black"
+        android:text="count: 0"
+        android:textColor="@color/color_chronometr"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_number_step"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_testmedium"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Chronometer
-        android:id="@+id/tv_chronometer"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_gravity="center"
-        android:foregroundGravity="center"
-        android:format="%MM: SS"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/color_chronometr"
-        android:textSize="24sp"
-        android:typeface="serif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back_testhard" />
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="18dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+    <TextView
+        android:id="@+id/tv_number_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:max="20"
-        android:progress="12"
-        android:progressDrawable="@drawable/style_progressbar"
+        android:fontFamily="@font/merriweather_black"
+        android:text="1/20"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_count"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_chronometer" />
+        app:layout_constraintTop_toTopOf="@+id/tv_count" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingBottom="15dp"
-        android:paddingTop="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_number_step"
+        app:layout_constraintStart_toStartOf="@+id/btn_back_testmedium"
+        app:layout_constraintTop_toBottomOf="@+id/tv_count"
+        app:srcCompat="@drawable/img_logo_info" />
 
-        <ImageButton
-            android:id="@+id/btn_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/style_button"
-            android:scaleType="fitCenter" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-        <ImageButton
-            android:id="@+id/btn_2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/style_button"
-            android:scaleType="fitCenter" />
-    </LinearLayout>
-
-
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
