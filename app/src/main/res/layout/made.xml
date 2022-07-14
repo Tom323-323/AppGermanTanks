@@ -9,70 +9,127 @@
 
 
     <Button
-        android:id="@+id/btn_back_testmedium"
+        android:id="@+id/btn_back_test_hard"
         android:layout_width="100dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style_button"
         android:fontFamily="@font/merriweather_black"
         android:text="@string/bt_exit"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_count"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_count" />
-
-    <TextView
-        android:id="@+id/tv_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/merriweather_black"
-        android:text="count: 0"
-        android:textColor="@color/color_chronometr"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@+id/tv_number_step"
-        app:layout_constraintStart_toEndOf="@+id/btn_back_testmedium"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_test_hard"
+        app:layout_constraintEnd_toStartOf="@+id/img_heart2"
+        app:layout_constraintTop_toTopOf="@+id/btn_back_test_hard"
+        app:srcCompat="@drawable/img_test_hard" />
+
+    <ImageView
+        android:id="@+id/img_heart2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_test_hard"
+        app:layout_constraintEnd_toStartOf="@+id/img_heart3"
+        app:layout_constraintTop_toTopOf="@+id/btn_back_test_hard"
+        app:srcCompat="@drawable/img_test_hard" />
+
+    <ImageView
+        android:id="@+id/img_heart3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_test_hard"
+        app:layout_constraintEnd_toStartOf="@+id/tv_number_step"
+        app:layout_constraintTop_toTopOf="@+id/btn_back_test_hard"
+        app:srcCompat="@drawable/img_test_hard" />
+
 
     <TextView
         android:id="@+id/tv_number_step"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/merriweather_black"
         android:text="1/20"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_count"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_count" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/img_test_hard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
         app:layout_constraintEnd_toEndOf="@+id/tv_number_step"
-        app:layout_constraintStart_toStartOf="@+id/btn_back_testmedium"
-        app:layout_constraintTop_toBottomOf="@+id/tv_count"
-        app:srcCompat="@drawable/img_logo_info" />
+        app:layout_constraintStart_toStartOf="@+id/btn_back_test_hard"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back_test_hard"
+        app:srcCompat="@drawable/img_test_main_logo" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_test_hard">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        <Button
+            android:id="@+id/btn_testhrd_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_button"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/btn_testhrd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_button"
+            android:text="Button2" />
+
+        <Button
+            android:id="@+id/btn_testhrd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_button"
+            android:text="Button2" />
+
+        <Button
+            android:id="@+id/btn_testhrd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_button"
+            android:text="Button2" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
