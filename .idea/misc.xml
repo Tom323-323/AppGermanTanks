@@ -22,10 +22,17 @@
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_main.xml" value="0.33" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/fragment_test_medium.xml" value="0.25" />
         <entry key="..\:/AppGermanTanks/app/src/main/res/layout/made.xml" value="0.33" />
+        <entry key="..\:/android/prj/app/src/main/res/drawable/btn_aler_dialog_wrong.xml" value="0.348" />
+        <entry key="..\:/android/prj/app/src/main/res/drawable/dialog_theme.xml" value="0.348" />
+        <entry key="..\:/android/prj/app/src/main/res/layout/fragment_test_easy.xml" value="0.36666666666666664" />
+        <entry key="..\:/android/prj/app/src/main/res/layout/fragment_test_hard.xml" value="0.358695652173913" />
+        <entry key="..\:/android/prj/app/src/main/res/layout/fragment_test_medium.xml" value="0.358695652173913" />
+        <entry key="..\:/android/prj/app/src/main/res/layout/fragment_toast.xml" value="0.2850877192982456" />
+        <entry key="..\:/android/prj/app/src/main/res/layout/made.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
