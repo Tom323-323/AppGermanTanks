@@ -16,9 +16,6 @@ class TestEasyFragment : Fragment(R.layout.fragment_test_easy) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentTestEasyBinding.bind(view)
 
-        binding!!.btnBackTesteasy.setOnClickListener {
-            findNavController().navigate(R.id.action_testEasyFragment_to_testMainFragment)
-        }
 
         binding!!.btnTestEasy1.setOnClickListener {
 
