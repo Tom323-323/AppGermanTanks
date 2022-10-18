@@ -29,6 +29,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/merriweather_black"
                 android:layout_weight="30"
                 android:background="@drawable/style_button"
                 android:gravity="center"
@@ -153,7 +154,8 @@
                 android:layout_weight="10"
                 android:background="@drawable/style_button"
                 android:textAllCaps="false"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorBlack"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button2"
@@ -165,7 +167,8 @@
                 android:layout_weight="10"
                 android:background="@drawable/style_button"
                 android:textAllCaps="false"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorBlack"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button3"
@@ -177,7 +180,8 @@
                 android:layout_weight="10"
                 android:background="@drawable/style_button"
                 android:textAllCaps="false"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorBlack"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button4"
@@ -189,7 +193,8 @@
                 android:layout_weight="10"
                 android:background="@drawable/style_button"
                 android:textAllCaps="false"
-                android:textColor="@color/colorBlack" />
+                android:textColor="@color/colorBlack"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
     </LinearLayout>

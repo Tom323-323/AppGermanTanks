@@ -14,7 +14,7 @@
         android:background="@drawable/ic_back_test_v3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/img_lnfo_logo"
@@ -22,6 +22,7 @@
         android:layout_height="166dp"
         android:layout_marginStart="136dp"
         android:layout_marginEnd="137dp"
+        android:contentDescription="@string/logo_name_splash_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_info_to_back"

@@ -49,7 +49,7 @@
                 android:gravity="center|center_vertical"
                 android:text="@string/test_main_choise"
                 android:textColor="@color/colorMain"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:typeface="normal" />
 
             <LinearLayout
@@ -61,7 +61,7 @@
                 <Button
                     android:id="@+id/btn_maintest_easy"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
 
                     android:layout_margin="10dp"
@@ -97,7 +97,7 @@
                 <Button
                     android:id="@+id/btn_maintest_medium"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:background="@drawable/style_button"
@@ -131,7 +131,7 @@
                 <Button
                     android:id="@+id/btn_maintest_hard"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:background="@drawable/style_button"
