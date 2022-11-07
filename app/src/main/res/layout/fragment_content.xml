@@ -5,55 +5,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presenter.screens.ContentFragment">
+    tools:context=".presenter.screens.ContentFragment"
+    android:background="@color/colorText">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_title_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="59dp"
-        android:text="TextView"
+        android:text="TITLE"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_content_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_content"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/img_content_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/img_content_1"
+        app:layout_constraintStart_toStartOf="@+id/img_content_1"
+        app:layout_constraintTop_toBottomOf="@+id/img_content_1"
         tools:src="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/img_content_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/img_content_2"
+        app:layout_constraintStart_toStartOf="@+id/img_content_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_content_2"
         tools:src="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_content_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        android:text="CONTENT"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_content_3"
+        app:layout_constraintStart_toStartOf="@+id/img_content_3"
+        app:layout_constraintTop_toBottomOf="@+id/img_content_3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
